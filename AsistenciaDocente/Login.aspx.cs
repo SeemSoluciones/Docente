@@ -47,9 +47,9 @@ namespace AsistenciaDocente
                         Response.Redirect("~/PanelPricipal.aspx");
 
                     }
-                    else if (listaProd["NombreP"].ToString() == "Cajero")
+                    else if (listaProd["NombreP"].ToString() == "Secretaria")
                     {
-                        Response.Redirect("~/Caja2.aspx");
+                        Response.Redirect("~/Secre.aspx");
                     }
                 }
             }
