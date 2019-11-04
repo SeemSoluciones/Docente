@@ -42,15 +42,10 @@ namespace AsistenciaDocente
                     
                     Session["IdPuesto"] = listaProd["IdPuesto"].ToString();
 
-                    if (listaProd["NombreP"].ToString() == "Admin")
-                    {
-                        Response.Redirect("~/PanelPricipal.aspx");
+                   
+                        Response.Redirect("~/Asistencia.aspx");
 
-                    }
-                    else if (listaProd["NombreP"].ToString() == "Secretaria")
-                    {
-                        Response.Redirect("~/Secre.aspx");
-                    }
+                    
                 }
             }
             else
