@@ -15,7 +15,7 @@
               </div>
 
 
-
+       
 
 
         <div class="table table-responsive">
@@ -73,12 +73,13 @@
                                </div>
                               
                               
-                               
-                                 <div class="form-group">
-                                   <label>TiPo Entrada/Salida</label>
-                                     <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource4" DataTextField="TipoES" DataValueField="IdTipoES" CssClass="form-control"></asp:DropDownList>
+                                <div class="form-group">
+                                   <label>TiPoEntrada/Salida</label>
+                                     <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1
+                                         " DataTextField="TipoES" DataValueField="IdTipoES" CssClass="form-control"></asp:DropDownList>
                                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conexion %>" SelectCommand="SELECT [IdTipoES], [TipoES] FROM [TipoES]"></asp:SqlDataSource>
                                </div>
+                                 
 
                         
                             </div>
