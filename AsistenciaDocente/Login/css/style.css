@@ -15,25 +15,26 @@ body
 	height: auto;
 	margin: auto;
 	margin-top: 10%;
-    /*background:#808080*/
+    /*background:#000000*/
 }
 .avatar {
 	width: 100%;
 	margin: auto;
-	width: 340px;
+	width: 317px;
 	border-radius: 100px;
-	height: 272px;
-	background: #ffffff ;
+	height: 224px;
+	background: #ffffff;
 	position: relative;
-	bottom: -25px;
+	bottom: -1px;
+    left: -11px;
 }
 .avatar img {
-	width: 324px;
-	height: 265px;
+	width: 300px;
+	height: 207px;
 	border-radius: 100px;
 	border-radius: 100px;
 	margin: auto;
-	border:5px solid #996633;
+	border:5px solid #000000;
 	display: block;
 }
 .wrap input {

@@ -7,7 +7,7 @@
 
   <meta charset="UTF-8">
 
-  <title>TiendaConce - Login </title>
+  <title>CED - Login </title>
 
   <link rel="stylesheet" href="Login/css/reset.css">
 
