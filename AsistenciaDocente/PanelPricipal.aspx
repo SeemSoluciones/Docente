@@ -15,24 +15,25 @@
     <div class="col-lg-3 col-md-8">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <a href="Caja.aspx">
+                <a href="Horario.aspx">
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                             <i class="fa fa-money fa-5x">
+                            <i class="fa fa-pencil fa-5x"></i>
+                            <%-- <i class="fa fa-money fa-5x">
                              
-                           </i>
+                           </i>--%>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <div class="huge">Ventas</div>
+                            <div class="huge">Horario Docente</div>
                         </div>
                     </div>
                 </a>
             </div>
-            <a href="ReporteVentas.aspx">
+            <a href="#">
                 <div class="panel-footer">
-                    <span class="pull-left">Reporte de Ventas</span>
+                    <span class="pull-left">Reporte Horario</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                     <div class="clearfix"></div>
                 </div>
@@ -42,17 +43,17 @@
     <div class="col-lg-3 col-md-6">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <a href="Compra.aspx">
+                <a href="Jornada.aspx">
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <i class="fa fa-cart-arrow-down fa-5x">
+                            <i class="fa fa-address-book-o fa-5x">
                              
                             </i>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <div class="huge">Compras</div>
+                            <div class="huge">Jornada Docente</div>
                         </div>
                     </div>
 
@@ -60,7 +61,7 @@
             </div>
             <a href="#">
                 <div class="panel-footer">
-                    <span class="pull-left">Reporte de compras</span>
+                    <span class="pull-left">Reporte Jornada</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                     <div class="clearfix"></div>
                 </div>
@@ -70,24 +71,24 @@
     <div class="col-lg-3 col-md-6">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <a href="Stock.aspx">
+                <a href="Puesto.aspx">
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <i class="fa fa-archive fa-5x">
+                            <i class="fa fa-pencil-square-o fa-5x">
                               
                                 </i>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <div class="huge">Inventario</div>
+                            <div class="huge">Puestos Docentes</div>
                         </div>
                     </div>
                     </a>
                 </div>
-            <a href="Stock.aspx">
+            <a href="#">
                 <div class="panel-footer">
-                    <span class="pull-left">Reporte de inventario</span>
+                    <span class="pull-left">Reporte Puesto</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                     <div class="clearfix"></div>
                 </div>
@@ -97,7 +98,7 @@
     <div class="col-lg-3 col-md-6">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <a href="Cliente.aspx">
+                <a href="Docente.aspx">
                     <div class="row">
                         <div class="col-xs-12 text-center">
                             <i class="fa fa-users fa-5x">
@@ -107,14 +108,14 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <div class="huge">Clientes</div>
+                            <div class="huge">Docentes</div>
                         </div>
                     </div>
                     </a>
          </div>
-            <a href="Credito2.aspx">
+            <a href="#">
                 <div class="panel-footer">
-                    <span class="pull-left">Créditos del Clientes</span>
+                    <span class="pull-left">Listado Docentes</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                     <div class="clearfix"></div>
                 </div>

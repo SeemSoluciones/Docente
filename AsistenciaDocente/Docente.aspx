@@ -8,8 +8,8 @@
     <section class="content">
               <div class="input-group custom-search-form">
                  <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control"></asp:TextBox>
-        <span class="input-group-btn">  <asp:Button ID="Button2" runat="server" Text="Buscar" CssClass="btn btn-default" OnClick="Button2_Click" />
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#fm-modal-grid"><i class="fa fa-plus">Nuevo</i></button>               
+        <span class="input-group-btn">  <asp:Button ID="Button2" runat="server" Text="Buscar" CssClass="btn bg-navy" OnClick="Button2_Click" />
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fm-modal-grid"><i class="fa fa-plus">Nuevo</i></button>               
                 </span>
               </div>
         <div class="table table-responsive">
