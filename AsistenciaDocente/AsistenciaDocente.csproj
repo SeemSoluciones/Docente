@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Horario.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Login\css\reset.css" />
     <Content Include="Login\css\style.css" />
@@ -7172,6 +7173,7 @@
     <Content Include="obj\Debug\AsistenciaDocente.pdb" />
     <Content Include="PanelPricipal.aspx" />
     <Content Include="Puesto.aspx" />
+    <Content Include="TipoES.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -7188,6 +7190,13 @@
     </Compile>
     <Compile Include="Docente.aspx.designer.cs">
       <DependentUpon>Docente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Horario.aspx.cs">
+      <DependentUpon>Horario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Horario.aspx.designer.cs">
+      <DependentUpon>Horario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Jornada.aspx.cs">
       <DependentUpon>Jornada.aspx</DependentUpon>
@@ -7227,6 +7236,13 @@
     </Compile>
     <Compile Include="Puesto.aspx.designer.cs">
       <DependentUpon>Puesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TipoES.aspx.cs">
+      <DependentUpon>TipoES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TipoES.aspx.designer.cs">
+      <DependentUpon>TipoES.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

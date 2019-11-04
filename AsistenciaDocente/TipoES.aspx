@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="Puesto.aspx.cs" Inherits="AsistenciaDocente.Puesto" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="TipoES.aspx.cs" Inherits="AsistenciaDocente.TipoES" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <section class="content-header">
-        <h1 align="center" >Puesto Docentes</h1>        
+        <h1 align="center" >Tipo Entrada Salida</h1>        
         </section>
     
     <section class="content">
@@ -25,27 +25,27 @@
                 </span>
               </div>
             <div class="table">
-             <asp:GridView ID="GridView1"  runat="server" AllowPaging="True" AutoGenerateColumns="False"  CssClass="table table-responsive" DataKeyNames="IdPuesto" DataSourceID="SqlDataSource1">
+             <asp:GridView ID="GridView1"  runat="server" AllowPaging="True" AutoGenerateColumns="False"  CssClass="table table-responsive" DataKeyNames="IdTipoES" DataSourceID="SqlDataSource1">
                  <Columns>
                      
-                     <asp:BoundField DataField="IdPuesto" HeaderText="IdPuesto" ReadOnly="True" SortExpression="IdPuesto" InsertVisible="False" />
-                     <asp:BoundField DataField="NombreP" HeaderText="NombreP" SortExpression="NombreP" />
+                     <asp:BoundField DataField="IdTipoES" HeaderText="IdTipoES" ReadOnly="True" SortExpression="IdTipoES" InsertVisible="False" />
+                     <asp:BoundField DataField="TipoES" HeaderText="TipoES" SortExpression="TipoES" />
                    
                      <asp:CommandField ShowEditButton="True" />
                      <asp:CommandField ShowDeleteButton="True" />
                    
                  </Columns>
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conexion %>" SelectCommand="SELECT Puesto.* FROM Puesto" DeleteCommand="DELETE FROM Puesto WHERE (IdPuesto = @IdPuesto)  " InsertCommand="INSERT INTO Puesto(NombreP) VALUES (@NombreP)" UpdateCommand="UPDATE Puesto SET NombreP = @NombreP  WHERE (IdPuesto = @IdPuesto)">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conexion %>" SelectCommand="SELECT TipoES.* FROM TipoES" DeleteCommand="DELETE FROM TipoES WHERE (IdTipoES = @IdTipoES)  " InsertCommand="INSERT INTO TipoES(TipoES) VALUES (@TipoES)" UpdateCommand="UPDATE TipoES SET TipoES = @TipoES WHERE (IdTipoES = @IdTipoES)">
                     <DeleteParameters>
-                        <asp:Parameter Name="IdPuesto" />
+                        <asp:Parameter Name="IdTipoES" />
                     </DeleteParameters>
                     <InsertParameters>
-                        <asp:Parameter Name="NombreP" />
+                        <asp:Parameter Name="TipoES" />
                     </InsertParameters>
                     <UpdateParameters>
-                        <asp:Parameter Name="NombreP" />
-                        <asp:Parameter Name="IdPuesto" />
+                        <asp:Parameter Name="TipoES" />
+                        <asp:Parameter Name="IdTipoES" />
                     </UpdateParameters>
                 </asp:SqlDataSource>
         </div>
@@ -67,7 +67,7 @@
                             <div class="row">
                                 <div class="col-12 col-sm-12">
                                     <div>
-                                        <label>Nombre Puesto</label>
+                                        <label>Nombre Dia</label>
                                         <asp:TextBox ID="TextBox6" CssClass="form-control" runat="server"></asp:TextBox>
                                     </div>
                               
@@ -86,4 +86,5 @@
 
     </section>
 </asp:Content>
+
 
