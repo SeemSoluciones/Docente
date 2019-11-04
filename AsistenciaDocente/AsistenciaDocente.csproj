@@ -51,6 +51,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\ReportViewer\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Asistencia.aspx" />
+    <Content Include="Asistencia2.aspx" />
     <Content Include="Horario.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Login\css\reset.css" />
@@ -628,6 +633,19 @@
     <Content Include="obj\Debug\AsistenciaDocente.csprojResolveAssemblyReference.cache" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="Principal.Master" />
+    <Content Include="Reportes\ReporteDocenteFecha.aspx" />
+    <Content Include="Reportes\ReportesDataSet1.xsc">
+      <DependentUpon>ReportesDataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="Reportes\ReportesDataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportesDataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reportes\ReportesDataSet1.xss">
+      <DependentUpon>ReportesDataSet1.xsd</DependentUpon>
+    </Content>
+    <Content Include="Secre.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -7177,6 +7195,7 @@
     <Content Include="obj\Debug\AsistenciaDocente.pdb" />
     <Content Include="PanelPricipal.aspx" />
     <Content Include="Puesto.aspx" />
+    <Content Include="Reportes\ReporteMaestro.aspx" />
     <Content Include="TipoES.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -7187,6 +7206,13 @@
     </Compile>
     <Compile Include="Asistencia.aspx.designer.cs">
       <DependentUpon>Asistencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencia2.aspx.cs">
+      <DependentUpon>Asistencia2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asistencia2.aspx.designer.cs">
+      <DependentUpon>Asistencia2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dia.aspx.cs">
       <DependentUpon>Dia.aspx</DependentUpon>
@@ -7248,6 +7274,32 @@
     <Compile Include="Puesto.aspx.designer.cs">
       <DependentUpon>Puesto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReporteDocenteFecha.aspx.cs">
+      <DependentUpon>ReporteDocenteFecha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteDocenteFecha.aspx.designer.cs">
+      <DependentUpon>ReporteDocenteFecha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteMaestro.aspx.cs">
+      <DependentUpon>ReporteMaestro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteMaestro.aspx.designer.cs">
+      <DependentUpon>ReporteMaestro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Secre.Master.cs">
+      <DependentUpon>Secre.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secre.Master.designer.cs">
+      <DependentUpon>Secre.Master</DependentUpon>
+    </Compile>
     <Compile Include="TipoES.aspx.cs">
       <DependentUpon>TipoES.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7272,6 +7324,10 @@
     <Folder Include="bin\zh-Hant\" />
     <Folder Include="Login\imagenes\" />
     <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\ReportDocente.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportDocenteFecha.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

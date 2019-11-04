@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
-using System.IO;
 
 namespace AsistenciaDocente
 {
@@ -46,7 +42,7 @@ namespace AsistenciaDocente
                             SqlDataSource2.InsertParameters["Hora"].DefaultValue = Label2.Text;
                             SqlDataSource2.InsertParameters["Fecha"].DefaultValue = Label1.Text;
                             SqlDataSource2.InsertParameters["Id"].DefaultValue = ListaUser["IdMaestro"].ToString();
-                            SqlDataSource2.InsertParameters["Tipo"].DefaultValue = "2";
+                            SqlDataSource2.InsertParameters["Tipo"].DefaultValue = "3";
                             ms = SqlDataSource2.Insert();
                             if (ms > 0)
                             {

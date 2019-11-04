@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="AsistenciaDocente.Principal" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Secre.master.cs" Inherits="AsistenciaDocente.Secre" %>
 
 <!DOCTYPE html>
 
@@ -132,31 +132,14 @@
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">MAIN NAVIGATION</li>
                     <li>
-                        <a href="PanelPricipal.aspx">
+                        <a href="#">
                             <i class="fa fa-dashboard"></i><span>Panel Principal</span>
                         </a>
                     </li>
 
-                     <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-table"></i>
-                            <span>Administración</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="Jornada.aspx"><i class="fa fa-circle-o"></i>Jornada</a></li>
-                            <li><a href="Dia.aspx"><i class="fa fa-circle-o"></i>Dia</a></li>
-                            <li><a href="Puesto.aspx"><i class="fa fa-circle-o"></i>Puesto</a></li>
-                            <li><a href="Docente.aspx"><i class="fa fa-circle-o"></i>Docente</a></li>
-                           <%-- <li><a href="TipoES.aspx"><i class="fa fa-circle-o"></i>Tipo ES</a></li>--%>
-                            <li><a href="Horario.aspx"><i class="fa fa-circle-o"></i>Horario</a></li>
-                            
-                        </ul>
-                    </li>
                     
-                    <li class="treeview">
+                    
+                    <%--<li class="treeview">
                         <a href="#">
                             <i class="fa fa-pie-chart"></i>
                             <span>Reportes</span>
@@ -169,7 +152,7 @@
                             <li><a href="Reportes/ReporteDocenteFecha.aspx"><i class="fa fa-circle-o"></i>Docente Fecha</a></li>
                             
                         </ul>
-                    </li>
+                    </li>--%>
                  
                     <li>
                         <a href="https://www.facebook.com/Colegio-Ced-Xela-112617006041608/" target="_blank"> 
