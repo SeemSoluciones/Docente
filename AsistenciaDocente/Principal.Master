@@ -150,7 +150,7 @@
                             <li><a href="Dia.aspx"><i class="fa fa-circle-o"></i>Dia</a></li>
                             <li><a href="Puesto.aspx"><i class="fa fa-circle-o"></i>Puesto</a></li>
                             <li><a href="Docente.aspx"><i class="fa fa-circle-o"></i>Docente</a></li>
-                            <li><a href="TipoES.aspx"><i class="fa fa-circle-o"></i>Tipo ES</a></li>
+                           <%-- <li><a href="TipoES.aspx"><i class="fa fa-circle-o"></i>Tipo ES</a></li>--%>
                             <li><a href="Horario.aspx"><i class="fa fa-circle-o"></i>Horario</a></li>
                             
                         </ul>
@@ -172,9 +172,9 @@
                     </li>
                  
                     <li>
-                        <a href="https://www.parts.com" target="_blank"> 
+                        <a href="https://www.facebook.com/Colegio-Ced-Xela-112617006041608/" target="_blank"> 
                             <i class="fa fa-internet-explorer"></i>
-                            <span>Ir a parts.com</span>
+                            <span>Ir a Facebook.com</span>
                         </a>
                     </li>
 
