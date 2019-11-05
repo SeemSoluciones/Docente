@@ -637,6 +637,7 @@
     <Content Include="Reportes\ReportesDataSet1.xsc">
       <DependentUpon>ReportesDataSet1.xsd</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\DocenteCED.pubxml" />
     <None Include="Reportes\ReportesDataSet1.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
