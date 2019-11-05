@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.IO;
+using System.Data.Sql;
 
 namespace AsistenciaDocente
 {
@@ -16,6 +17,9 @@ namespace AsistenciaDocente
         {
             Label1.Text = System.DateTime.Today.ToString("dd/MM/yyyy");
             Label2.Text = DateTime.Now.ToShortTimeString();
+            SqlDataSource4.SelectParameters["fecha"].DefaultValue = Label1.Text;
+            SqlDataSource4.DataSourceMode = SqlDataSourceMode.DataReader;
+            
         }
 
 
@@ -23,8 +27,8 @@ namespace AsistenciaDocente
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 SqlDataSource1.SelectParameters["Usuario"].DefaultValue = User.Value;
                 SqlDataSource1.SelectParameters["Contrasena"].DefaultValue = Pass.Value;
                 SqlDataSource1.DataSourceMode = SqlDataSourceMode.DataReader;
@@ -84,13 +88,33 @@ namespace AsistenciaDocente
                 {
                     Response.Write("<script>alert('Error, no se registro en el sistema')</script>");
                 }
-            //}
-            //catch
-            //{
-            //    Response.Write("<script>alert('Error, ingrese un usario correcto')</script>");
-            //}
+            }
+            catch
+            {
+                Response.Write("<script>alert('Error, ingrese un usario correcto')</script>");
+            }
         }
 
-       
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                string _estado = DataBinder.Eval(e.Row.DataItem, "TotalID").ToString();
+                if (_estado == "1")
+                {
+                    e.Row.Cells[1].Text = "ON";
+                    e.Row.Cells[1].BackColor = System.Drawing.Color.GreenYellow;
+                }
+                if (_estado == "2")
+                {
+                    e.Row.Cells[1].Text = "OFF";
+                    e.Row.Cells[1].BackColor = System.Drawing.Color.Red;
+                }
+
+            }
+        }
+
+  
     }
 }

@@ -28,8 +28,7 @@
         </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" onload="mueveReloj();">
-
-    <body class="hold-transition login-page">
+ 
 <div class="login-box">
   <div class="login-logo">
       <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
@@ -58,6 +57,27 @@
             <asp:Button ID="Button1" runat="server" Text="Aceptar" CssClass="btn btn-primary btn-block btn-flat" OnClick="Button1_Click" />
         </div>
         <!-- /.col -->
+          <table class="table table-striped"> 
+                  <asp:GridView ID="GridView1" runat="server" CssClass="table table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource4" OnRowDataBound="GridView1_RowDataBound" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+                      <Columns>
+                          <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
+                          <asp:BoundField DataField="TotalID" HeaderText="Estado" ReadOnly="True" SortExpression="TotalID" />
+                      </Columns>
+                      <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                      <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                      <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                      <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                      <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                      <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                      <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                      <SortedDescendingHeaderStyle BackColor="#242121" />
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:AsistenciaConnectionString %>" SelectCommand="SELECT Maestro.Nombre, COUNT(Maestro.Nombre) AS TotalID FROM Maestro INNER JOIN Horario ON Maestro.IdMaestro = Horario.IdMaestro INNER JOIN TipoES ON Horario.IdTipoES = TipoES.IdTipoES WHERE (Horario.Fecha = @fecha) GROUP BY Maestro.Nombre">
+                    <SelectParameters>
+                        <asp:Parameter Name="fecha" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
+              </table>
       </div>
 
        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conexion %>" SelectCommand="SELECT Maestro.IdMaestro, Maestro.Nombre, Puesto.IdPuesto,Puesto.NombreP FROM Maestro INNER JOIN Puesto ON Maestro.IdPuesto = Puesto.IdPuesto WHERE (Maestro.Usuario = @Usuario) AND (Maestro.Contrasena = @Contrasena)">
@@ -87,8 +107,11 @@
     <!-- /.social-auth-links -->
 
   </div>
+    </div>
   <!-- /.login-box-body -->
-</div>
+           
+        
+  <!-- /.login-box  -------------------------------------------------- ---> 
 <!-- /.login-box -->
 
 <!-- jQuery 3 -->
@@ -106,6 +129,6 @@
     });
   });
 </script>
-</body>
+</>
 
 </asp:Content>
