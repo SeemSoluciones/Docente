@@ -15,7 +15,7 @@
     <div class="col-lg-3 col-md-8">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <a href="Horario.aspx">
+                <a href="Asistencia.aspx">
                     <div class="row">
                         <div class="col-xs-12 text-center">
                             <i class="fa fa-pencil fa-5x"></i>
@@ -26,7 +26,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <div class="huge">Horario Docente</div>
+                            <div class="huge">Asistencia Docente</div>
                         </div>
                     </div>
                 </a>

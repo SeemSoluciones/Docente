@@ -151,7 +151,7 @@
                             <li><a href="Puesto.aspx"><i class="fa fa-circle-o"></i>Puesto</a></li>
                             <li><a href="Docente.aspx"><i class="fa fa-circle-o"></i>Docente</a></li>
                            <%-- <li><a href="TipoES.aspx"><i class="fa fa-circle-o"></i>Tipo ES</a></li>--%>
-                            <li><a href="Horario.aspx"><i class="fa fa-circle-o"></i>Horario</a></li>
+                            <li><a href="Asistencia.aspx"><i class="fa fa-circle-o"></i>Asistencia</a></li>
                             
                         </ul>
                     </li>
